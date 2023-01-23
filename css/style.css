@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:1200px;
+    padding: 0 50px;
+    margin: auto;
+}
+.mainPage{
+padding: 140px 0;
+}
+
+:root{
+    --main-color:gainsboro;
+}
+nav{
+    padding: 50px 0;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    
+}
+nav .container{
+    width: 1200px;
+margin: auto;
+display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+list-style: none;
+}
+nav ul li{
+    padding: 0 50px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+section#hero{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../image/img4.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: transparent;
+    position: relative;
+    
+}
+#container{
+    width:90%;
+    margin:auto
+}
+section#hero .container{
+    margin: 0;
+    color: white;
+
+}
+section#hero .container.information{
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    color: white;
+    width: fit-content;
+    
+    
+
+}
+section#hero .information h1, h2 , h3{
+font-size: 30px;
+font-weight: bold;
+color: gray;
+}
+section#hero .information  h3{
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: 30px 0;
+    padding-bottom: 15px;
+
+}
+section#hero .information li{
+    list-style: none;
+}
+section#hero  ul {
+    width: 200px;
+    list-style: none;
+    color: var(--main-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+section#hero   .information ul  a i{
+    text-decoration: none;
+    color: gray;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+section#About  > div{
+    padding: 0 30px;
+}
+section#About{
+    display: flex;
+}
+section#About .l-about{
+    width: 30%;
+    text-align: right;
+}
+
+section#About .r-about{
+    width: 70%;
+}
+section#About  .r-about .languages{
+    margin-top: 50px;
+}
+section#About  .r-about .languages .header{
+    display: flex;
+    justify-content: space-between;
+} 
+    .progress{
+    background-color: var(--main-color);
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.progress> div.html{
+width: 95%;
+background-color: aqua;
+height: 100%;
+border-radius: 15px;
+
+}
+.text-center{
+    text-align: center;
+}
+.progress> div.css{
+    width: 90%;
+    background-color: aqua;
+    height: 100%;
+    border-radius: 15px;
+
+    }
+    .progress> div.js{
+        width: 85%;
+        background-color: aqua;
+        height: 100%;
+        border-radius: 15px;
+
+        }
+        .progress> div.bootstrap{
+            width: 90%;
+            background-color: aqua;
+            height: 100%;
+            border-radius: 15px;
+
+            }
+section#Experience{
+    background-color: var(--main-color);
+}
+
+section#Experience #container{
+        display: flex; 
+
+}
+
+
+section#Experience  .cards{
+display: flex;
+    justify-content: space-between
+}
+section#Experience  .cards .details{
+width: calc(90% /3);
+padding: 30px;
+background-color: white;
+}
+section#Experience  .cards .details i{
+    margin-bottom: 10px;
+
+}
+section#Experience  .cards .details h4{
+margin-bottom: 30px;
+}
+
+
+section#Experience  >div{
+    padding: 0 30px;
+}
+.l-experience{
+    width: 30%;
+    text-align: center;
+
+}
+.r-experience{
+    width: 70%;
+    
+}
+.setting{
+    display: flex;
+    position: fixed;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%) translateX(100%);
+    transition-duration: 1s;
+}
+.setting span{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.setting span:nth-child(1){
+background-color:blue ;
+}
+.setting span:nth-child(2){
+    background-color:teal ;
+
+}
+.setting span:nth-child(3){
+    background-color:cornflowerblue ;
+
+}
+.setting button{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+}
+.show{
+    transform: translateY(-50%) translateX(0);
+}
+
+.details{
+    align-content: center;
+    padding: 100px 0;
+}
+section#Works {
+    display: flex;
+}
+
+section#Works .l-works{
+    width: 30%;
+}
+section#Works .r-works {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    overflow: hidden;
+
+}
+section#Works .r-works img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: 2s ;
+}
+
+section#Works .r-works img:hover{
+    transform: scale(1.4, 1.7);
+
+}
+section#Works .r-works .firstimage{
+grid-column: span 2;
+}
+section#Contact{
+    background-color: var(--main-color);  
+}
+section#Contact #container{
+    display: flex;
+}
+section#Contact  .l-contact{
+    width: 30%;
+    text-align: center;
+}
+section#Contact  .r-contact{
+    width: 70%;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .foot{
+display: flex;
+justify-content: space-between;
+padding: 50px 150px;
+}
+footer p{
+    font-size: 30px;
+
+}
+footer h4{
+    margin: 0 60px;
+    font-size: 20px;
+
+}
+footer span{
+    color: aqua;
+    font-weight: bold;
+    font-size: 30px;
+}
+footer .End-setting button{
+position: fixed;
+bottom: 30px;
+right: 30px;
+}
